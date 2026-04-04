@@ -1,10 +1,7 @@
 import pandas as pd
-import sqlite3
+import mysql.connector
 
 def create_feature_map(df):
-    """
-    Takes a dataframe and returns it with engineered features
-    """
 
     # ---- Rename columns ----
     df = df.rename(columns={
@@ -56,8 +53,26 @@ def create_feature_map(df):
     # ---- Fill missing ----
     df.fillna(df.median(numeric_only=True), inplace=True)
 
+    return df
+
+
+# 🔥 MAIN
+if __name__ == "__main__":
+
+    # ---- Load dataset ----
+    df = pd.read_csv("athlete_dataset_50.csv")
+    print("Columns:", df.columns)
+
+    # ---- Feature engineering ----
+    df = create_feature_map(df)
+
+    # ---- Add Primary Key ----
+    df.reset_index(drop=True, inplace=True)
+    df['athlete_id'] = df.index + 1
+
     # ---- Feature map ----
-    feature_columns = [
+    feature_map = df[[
+        'athlete_id',
         'BMI',
         'leg_height_ratio',
         'exp_age_ratio',
@@ -65,32 +80,7 @@ def create_feature_map(df):
         'training_intensity',
         'heart_rate_score',
         'injury_flag'
-    ]
-
-    feature_map = df[feature_columns]
-
-    return df, feature_map
-
-
-# 🔥 MAIN BLOCK
-if __name__ == "__main__":
-
-    # Load dataset
-    df = pd.read_csv("athlete_dataset_50.csv")
-
-    print("Columns:", df.columns)
-
-    # Generate features
-    df, feature_map = create_feature_map(df)
-
-    # ---- Add Primary Key ----
-    df.reset_index(drop=True, inplace=True)
-    df['athlete_id'] = df.index + 1
-
-    feature_map['athlete_id'] = df['athlete_id']
-
-    cols = ['athlete_id'] + [col for col in feature_map.columns if col != 'athlete_id']
-    feature_map = feature_map[cols]
+    ]]
 
     # ---- Preview ----
     print("✅ Feature Map Preview:")
@@ -100,9 +90,49 @@ if __name__ == "__main__":
     feature_map.to_csv("feature_map.csv", index=False)
     print("✅ Feature map saved as feature_map.csv")
 
-    # ---- Save to SQLite ----
-    conn = sqlite3.connect("athlete.db")
-    feature_map.to_sql("feature_map", conn, if_exists="replace", index=False)
+    # ==============================
+    # 🔥 MYSQL CONNECTION
+    # ==============================
+
+    conn = mysql.connector.connect(
+        host="localhost",
+        user="testuser",
+        password="",
+        database="athlete_db"
+    )
+
+    cursor = conn.cursor()
+
+    # ---- Create table ----
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS feature_map (
+        athlete_id INT PRIMARY KEY,
+        BMI FLOAT,
+        leg_height_ratio FLOAT,
+        exp_age_ratio FLOAT,
+        performance_index FLOAT,
+        training_intensity FLOAT,
+        heart_rate_score FLOAT,
+        injury_flag INT
+    )
+    """)
+
+    # ---- Clear old data (optional but safe) ----
+    cursor.execute("DELETE FROM feature_map")
+
+    # ---- Insert data ----
+    for _, row in feature_map.iterrows():
+        cursor.execute("""
+        INSERT INTO feature_map (
+            athlete_id, BMI, leg_height_ratio, exp_age_ratio,
+            performance_index, training_intensity,
+            heart_rate_score, injury_flag
+        )
+        VALUES (%s,%s,%s,%s,%s,%s,%s,%s)
+        """, tuple(row))
+
+    conn.commit()
+    cursor.close()
     conn.close()
 
-    print("✅ Data saved to SQLite database (athlete.db)")
+    print("✅ Data saved to MySQL database!")
