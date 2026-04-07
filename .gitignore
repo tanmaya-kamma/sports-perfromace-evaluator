@@ -1,8 +1,7 @@
-# Ignore virtual environment
-
-
+# Ignore virtual environments
 .venv/
+venv/
 venv2/
 __pycache__/
 .vscode/
-.envgit reset
+.env
