@@ -1,51 +1,51 @@
-Name,Age,Date of Birth,Biological Gender,Height (cm),Weight (kg),Leg Length (cm),Years of Training,100m PB (s),400m PB (s),5K PB (min),Resting Heart Rate,VO2 Max,Injury History (0/1),BMI,Leg-to-Height Ratio,Performance Index,Training Intensity
-Ananya Singh,34,08d-04m-91yyy,Male,161,68,76.3,1,11.15,74.46,17.82,73,59,1,26.23,0.474,1.164,0.23
-Sneha Verma,24,25d-04m-01yyy,Female,163,94,76.1,13,11.24,50.3,20.9,52,46,1,35.38,0.467,1.173,6.14
-Aman Sharma,26,17d-11m-99yyy,Male,176,72,94,6,12.88,67.89,22.52,55,40,0,23.24,0.534,1.344,1.97
-Karthik Patel,24,22d-01m-01yyy,Female,171,53,84.4,2,12.55,59.6,29.25,65,69,0,18.13,0.494,1.31,0.91
-Aman Das,35,19d-03m-90yyy,Male,174,58,80.7,7,11.76,62.01,19.81,56,48,0,19.16,0.464,1.228,2.27
-Rahul Verma,28,27d-09m-97yyy,Female,170,70,86.2,10,12.62,67.92,23.45,61,69,0,24.22,0.507,1.317,1.67
-Lakshmi Iyer,37,27d-12m-88yyy,Male,185,64,89.4,7,11.58,50.95,21.04,72,49,1,18.7,0.483,1.209,1.65
-Ananya Das,35,11d-07m-90yyy,Male,171,88,88.9,6,14.48,57.97,21.42,71,44,1,30.09,0.52,1.511,1.32
-Kiran Reddy,34,16d-04m-91yyy,Female,180,91,84.1,8,13.87,62.7,28.06,60,65,0,28.09,0.467,1.448,4
-Sneha Reddy,18,20d-09m-07yyy,Female,183,50,100,4,14.3,53.88,17.59,52,56,1,14.93,0.546,1.493,0.97
-Arjun Kapoor,25,12d-07m-00yyy,Male,185,95,95.9,11,13.4,54.8,26.52,54,67,1,27.76,0.518,1.399,2.87
-Pooja Kumar,31,18d-07m-94yyy,Male,179,53,86.1,3,12.77,48.95,19.36,63,60,1,16.54,0.481,1.333,0.44
-Sneha Kumar,24,01d-01m-02yyy,Female,179,83,90.4,8,14.14,65.74,29.88,48,57,1,25.9,0.505,1.476,2.55
-Arjun Kapoor,41,14d-06m-84yyy,Female,179,67,96.1,5,12.49,65.93,29.47,65,64,1,20.91,0.537,1.304,1.21
-Riya Iyer,43,24d-12m-82yyy,Male,156,77,84.1,12,12.77,48.06,16.83,74,40,0,31.64,0.539,1.333,1.83
-Vikram Kapoor,39,07d-02m-86yyy,Male,168,67,77.9,1,14.09,53.64,26.39,52,50,1,23.74,0.464,1.471,0.17
-Priya Singh,44,19d-05m-81yyy,Male,193,65,93.8,5,12.39,56.58,24.75,72,43,0,17.45,0.486,1.293,0.8
-Kavya Patel,40,11d-05m-85yyy,Male,161,81,87,5,11.4,79.19,18.54,53,43,0,31.25,0.54,1.19,1.94
-Meera Reddy,45,03d-08m-80yyy,Male,169,71,76.3,10,12.52,62.46,27.25,54,48,1,24.86,0.451,1.307,1.95
-Divya Iyer,30,16d-11m-95yyy,Female,161,94,85.1,7,13.49,54.95,19.66,71,54,1,36.26,0.529,1.408,2.05
-Meera Das,22,13d-11m-03yyy,Female,185,76,93,13,14.26,66.3,23.67,74,56,0,22.21,0.503,1.489,3.77
-Vikram Nair,27,29d-01m-98yyy,Male,181,65,92.6,15,12.99,62.62,24.77,55,64,0,19.84,0.512,1.356,2.2
-Rahul Singh,31,18d-03m-94yyy,Female,160,64,76.4,10,10.99,60,15.3,66,62,1,25,0.478,1.147,3.38
-Priya Singh,34,17d-10m-91yyy,Male,170,79,79.7,8,10.93,62.68,20.04,64,68,0,27.34,0.469,1.141,1.15
-Priya Singh,21,13d-02m-04yyy,Male,161,85,83.4,2,10.91,63.21,16.87,48,51,1,32.79,0.518,1.139,0.3
-Lakshmi Sharma,28,27d-10m-97yyy,Female,155,79,79.1,8,11.82,61.98,27.54,54,57,0,32.88,0.51,1.234,1.84
-Divya Verma,25,09d-06m-00yyy,Male,172,76,83.1,13,12.73,69.15,16.17,54,55,0,25.69,0.483,1.329,2.79
-Lakshmi Nair,22,12d-09m-03yyy,Male,185,70,90.8,11,12.67,73.88,20.55,64,66,0,20.45,0.491,1.323,3.35
-Meera Patel,36,13d-01m-89yyy,Female,182,62,87.6,15,12.37,75.44,28.57,55,60,1,18.72,0.481,1.291,4.05
-Kiran Kapoor,39,18d-01m-86yyy,Male,189,50,94,14,13.95,57.88,27.61,63,44,1,14,0.497,1.456,5.62
-Sneha Nair,44,19d-12m-81yyy,Female,171,75,78.7,3,12.24,58.17,15.35,72,50,1,25.65,0.46,1.278,0.44
-Divya Kapoor,20,20d-01m-05yyy,Male,155,62,80.3,10,10.66,59.74,20.01,57,65,0,25.81,0.518,1.113,2.32
-Kiran Singh,20,14d-08m-05yyy,Female,182,68,87.7,5,11.55,48.89,16.3,57,59,1,20.53,0.482,1.206,0.8
-Aditya Sharma,45,14d-07m-80yyy,Male,169,70,88.5,4,12.09,73.86,21.88,62,43,0,24.51,0.524,1.262,0.78
-Aditya Singh,20,16d-04m-05yyy,Female,162,53,88.7,7,10.57,66.65,28.98,63,42,1,20.2,0.548,1.103,1.02
-Divya Iyer,33,20d-04m-92yyy,Female,193,78,98,14,13.88,48.14,17.03,59,52,0,20.94,0.508,1.449,3.04
-Kiran Singh,22,19d-04m-03yyy,Female,186,76,93,12,13.95,54.89,22.58,53,65,0,21.97,0.5,1.456,1.85
-Nisha Reddy,38,16d-01m-87yyy,Female,156,93,79.3,15,11,74.49,20.45,74,44,0,38.21,0.508,1.148,3.22
-Nisha Das,44,25d-12m-81yyy,Male,161,73,85.2,2,11.39,54.22,24.36,65,62,0,28.16,0.529,1.189,0.4
-Meera Patel,22,23d-04m-03yyy,Male,195,54,93.6,10,12.4,65.63,28.44,70,52,1,14.2,0.48,1.294,1.48
-Pooja Verma,25,22d-06m-00yyy,Male,183,67,99.6,9,14.06,78.73,25.57,60,65,0,20.01,0.544,1.468,3.1
-Divya Das,36,04d-01m-90yyy,Female,156,66,81.1,14,12.92,74.56,20.42,68,50,0,27.12,0.52,1.349,4.93
-Aman Das,33,31d-03m-92yyy,Male,175,60,86.6,10,11.44,60.89,20.05,74,55,0,19.59,0.495,1.194,3.47
-Meera Das,21,18d-02m-04yyy,Female,178,84,92.8,5,12.94,61.14,15.34,50,69,0,26.51,0.521,1.351,1.16
-Pooja Das,40,10d-10m-85yyy,Female,181,65,81.5,2,13.14,78.45,29.73,50,48,0,19.84,0.45,1.372,0.46
-Kavya Nair,37,16d-02m-88yyy,Female,195,60,94.4,13,12.4,52.63,17.29,48,57,1,15.78,0.484,1.294,4.68
-Divya Das,31,12d-12m-94yyy,Male,160,58,80.1,11,10.71,50.66,24.7,71,55,0,22.66,0.501,1.118,2.54
-Kavya Kapoor,37,08d-09m-88yyy,Female,161,94,85.2,5,13.82,62.84,22.47,57,60,1,36.26,0.529,1.443,2.1
-Priya Nair,36,22d-03m-89yyy,Male,170,59,86.5,11,14.41,48.88,16.52,48,43,0,20.42,0.509,1.504,2.58
-Priya Verma,38,29d-05m-87yyy,Female,191,85,91.2,4,14.04,61.17,29.85,69,67,0,23.3,0.477,1.466,0.65
+athlete_id,athlete_code,full_name,age,date_of_birth_raw,date_of_birth,biological_gender,height_cm,weight_kg,leg_length_cm,years_of_training,pb_100m_s,pb_400m_s,pb_5k_min,resting_heart_rate,vo2_max,injury_history,source_type,video_id,video_file_name,has_video,notes
+1,ATH01,Ravi Kumar,22,12-05-2003,2003-05-12,Male,175,68,95,6,10.8,48.5,15.2,60,58.2,0,synthetic,VID01,athlete_01.mp4,1,Sprinter
+2,ATH02,Arjun Reddy,24,03-11-2001,2001-11-03,Male,178,72,97,7,10.6,47.9,14.8,58,60.1,1,synthetic,VID02,athlete_02.mp4,1,Minor hamstring injury
+3,ATH03,Kiran Das,21,19-07-2004,2004-07-19,Male,170,65,92,5,11.1,49.2,15.5,62,55.0,0,synthetic,VID03,athlete_03.mp4,1,Endurance focus
+4,ATH04,Vikram Singh,26,08-02-2000,2000-02-08,Male,182,78,100,9,10.4,46.8,14.2,55,62.5,1,synthetic,VID04,athlete_04.mp4,1,Knee rehab
+5,ATH05,Suresh Naik,23,25-09-2002,2002-09-25,Male,176,70,96,6,10.9,48.7,15.0,59,57.3,0,synthetic,VID05,athlete_05.mp4,1,Balanced athlete
+6,ATH06,Amit Verma,25,15-01-2001,2001-01-15,Male,180,75,99,8,10.5,47.2,14.6,56,61.0,0,synthetic,VID06,athlete_06.mp4,1,Strong sprinter
+7,ATH07,Deepak Yadav,27,10-03-1999,1999-03-10,Male,183,80,102,10,10.3,46.5,14.0,54,63.2,1,synthetic,VID07,athlete_07.mp4,1,Past ankle injury
+8,ATH08,Manoj Patel,22,05-06-2003,2003-06-05,Male,174,67,94,5,11.0,49.0,15.4,61,56.1,0,synthetic,VID08,athlete_08.mp4,1,Developing athlete
+9,ATH09,Rahul Sharma,24,21-08-2001,2001-08-21,Male,177,71,97,7,10.7,48.1,14.9,58,59.4,0,synthetic,VID09,athlete_09.mp4,1,Consistent performer
+10,ATH10,Naveen Rao,23,17-12-2002,2002-12-17,Male,179,73,98,6,10.8,48.4,15.1,60,58.0,0,synthetic,VID10,athlete_10.mp4,1,Speed focus
+11,ATH11,Rohit Mehta,25,09-04-2001,2001-04-09,Male,181,76,100,8,10.6,47.6,14.7,57,60.5,1,synthetic,VID11,athlete_11.mp4,1,Recovered injury
+12,ATH12,Anil Gupta,21,14-10-2004,2004-10-14,Male,172,66,93,4,11.2,49.5,15.6,63,54.8,0,synthetic,VID12,athlete_12.mp4,1,Beginner
+13,ATH13,Prakash Iyer,26,02-02-2000,2000-02-02,Male,184,82,103,9,10.4,46.9,14.3,55,62.8,0,synthetic,VID13,athlete_13.mp4,1,Elite athlete
+14,ATH14,Sunil Joshi,23,11-07-2002,2002-07-11,Male,175,69,95,6,10.9,48.6,15.0,59,57.9,0,synthetic,VID14,athlete_14.mp4,1,Stable
+15,ATH15,Karthik Nair,24,30-03-2001,2001-03-30,Male,178,72,97,7,10.7,48.0,14.8,58,59.8,1,synthetic,VID15,athlete_15.mp4,1,Minor strain
+16,ATH16,Harish Babu,22,18-05-2003,2003-05-18,Male,173,66,94,5,11.0,49.1,15.3,61,56.3,0,synthetic,VID16,athlete_16.mp4,1,Developing
+17,ATH17,Sanjay Pillai,27,22-09-1999,1999-09-22,Male,185,83,104,10,10.2,46.3,13.9,53,64.0,1,synthetic,VID17,athlete_17.mp4,1,Senior athlete
+18,ATH18,Ajay Singh,25,07-01-2001,2001-01-07,Male,180,75,99,8,10.5,47.3,14.5,56,61.3,0,synthetic,VID18,athlete_18.mp4,1,Consistent
+19,ATH19,Varun Shetty,23,29-06-2002,2002-06-29,Male,176,70,96,6,10.9,48.7,15.1,60,57.6,0,synthetic,VID19,athlete_19.mp4,1,All-rounder
+20,ATH20,Imran Khan,26,16-08-2000,2000-08-16,Male,182,79,101,9,10.4,46.7,14.2,55,62.1,1,synthetic,VID20,athlete_20.mp4,1,Recovered knee injury
+21,ATH21,Ramesh Yadav,24,05-02-2001,2001-02-05,Male,178,72,97,7,10.7,48.2,14.9,58,59.2,0,synthetic,VID21,athlete_21.mp4,1,Stable
+22,ATH22,Sachin Patil,22,12-09-2003,2003-09-12,Male,174,68,95,5,11.0,49.0,15.4,61,56.5,0,synthetic,VID22,athlete_22.mp4,1,Developing
+23,ATH23,Abhishek Roy,25,01-11-2001,2001-11-01,Male,181,76,100,8,10.6,47.5,14.7,57,60.8,1,synthetic,VID23,athlete_23.mp4,1,Recovered injury
+24,ATH24,Nikhil Jain,23,27-04-2002,2002-04-27,Male,176,71,96,6,10.8,48.5,15.1,60,58.3,0,synthetic,VID24,athlete_24.mp4,1,Speed focus
+25,ATH25,Suraj Kumar,21,03-12-2004,2004-12-03,Male,170,65,92,4,11.2,49.6,15.7,63,54.5,0,synthetic,VID25,athlete_25.mp4,1,Beginner
+26,ATH26,Neeraj Singh,27,14-07-1999,1999-07-14,Male,185,84,104,10,10.2,46.4,13.8,53,64.3,1,synthetic,VID26,athlete_26.mp4,1,Senior elite
+27,ATH27,Ashwin Rao,24,19-03-2001,2001-03-19,Male,179,73,98,7,10.7,48.0,14.8,58,59.9,0,synthetic,VID27,athlete_27.mp4,1,Consistent
+28,ATH28,Tejas Kulkarni,22,06-06-2003,2003-06-06,Male,173,67,94,5,11.0,49.2,15.3,61,56.2,0,synthetic,VID28,athlete_28.mp4,1,Developing
+29,ATH29,Kunal Shah,25,22-01-2001,2001-01-22,Male,180,75,99,8,10.5,47.4,14.6,56,61.5,0,synthetic,VID29,athlete_29.mp4,1,Strong
+30,ATH30,Aditya Verma,23,11-08-2002,2002-08-11,Male,176,70,96,6,10.9,48.6,15.0,59,57.8,0,synthetic,VID30,athlete_30.mp4,1,Stable
+31,ATH31,Mayank Agarwal,24,04-05-2001,2001-05-04,Male,178,72,97,7,10.7,48.1,14.9,58,59.3,1,synthetic,VID31,athlete_31.mp4,1,Minor injury
+32,ATH32,Arvind Menon,26,23-10-2000,2000-10-23,Male,182,78,101,9,10.4,46.8,14.2,55,62.4,0,synthetic,VID32,athlete_32.mp4,1,Elite
+33,ATH33,Vivek Mishra,22,18-02-2003,2003-02-18,Male,174,68,95,5,11.1,49.3,15.5,62,55.4,0,synthetic,VID33,athlete_33.mp4,1,Developing
+34,ATH34,Shubham Gupta,25,09-01-2001,2001-01-09,Male,180,75,99,8,10.6,47.6,14.7,57,60.6,0,synthetic,VID34,athlete_34.mp4,1,Consistent
+35,ATH35,Rajat Kapoor,23,28-07-2002,2002-07-28,Male,176,71,96,6,10.8,48.5,15.1,60,58.1,0,synthetic,VID35,athlete_35.mp4,1,Stable
+36,ATH36,Sameer Khan,21,13-09-2004,2004-09-13,Male,171,66,93,4,11.3,49.7,15.8,64,54.0,0,synthetic,VID36,athlete_36.mp4,1,Beginner
+37,ATH37,Faizal Ahmed,27,05-03-1999,1999-03-05,Male,185,84,104,10,10.2,46.3,13.8,53,64.5,1,synthetic,VID37,athlete_37.mp4,1,Senior elite
+38,ATH38,Harshit Tyagi,24,17-06-2001,2001-06-17,Male,179,73,98,7,10.7,48.0,14.8,58,59.7,0,synthetic,VID38,athlete_38.mp4,1,Consistent
+39,ATH39,Rohit Das,22,02-04-2003,2003-04-02,Male,173,67,94,5,11.0,49.1,15.3,61,56.4,0,synthetic,VID39,athlete_39.mp4,1,Developing
+40,ATH40,Siddharth Jain,25,29-12-2001,2001-12-29,Male,180,75,99,8,10.5,47.3,14.6,56,61.2,0,synthetic,VID40,athlete_40.mp4,1,Strong
+41,ATH41,Pooja Sharma,23,14-05-2002,2002-05-14,Female,165,58,90,6,11.8,52.0,17.5,64,52.0,0,synthetic,VID41,athlete_41.mp4,0,Middle distance
+42,ATH42,Ananya Reddy,22,08-11-2003,2003-11-08,Female,162,55,88,5,12.0,53.2,18.0,66,50.5,0,synthetic,VID42,athlete_42.mp4,0,Developing
+43,ATH43,Neha Gupta,24,25-07-2001,2001-07-25,Female,168,60,92,7,11.5,51.0,17.0,62,54.0,1,synthetic,VID43,athlete_43.mp4,0,Recovered injury
+44,ATH44,Sneha Iyer,21,02-01-2005,2005-01-02,Female,160,54,87,4,12.2,54.0,18.5,68,49.0,0,synthetic,VID44,athlete_44.mp4,0,Beginner
+45,ATH45,Kavya Nair,25,18-03-2001,2001-03-18,Female,170,62,93,8,11.4,50.8,16.8,61,55.2,0,synthetic,VID45,athlete_45.mp4,0,Strong
+46,ATH46,Ritu Singh,23,10-09-2002,2002-09-10,Female,166,59,91,6,11.7,51.8,17.3,63,53.0,0,synthetic,VID46,athlete_46.mp4,0,Consistent
+47,ATH47,Meera Joshi,22,06-06-2003,2003-06-06,Female,163,57,89,5,11.9,52.5,17.8,65,51.2,0,synthetic,VID47,athlete_47.mp4,0,Developing
+48,ATH48,Isha Kapoor,24,21-08-2001,2001-08-21,Female,167,60,92,7,11.6,51.2,17.1,62,53.8,1,synthetic,VID48,athlete_48.mp4,0,Minor injury
+49,ATH49,Divya Patel,21,30-10-2004,2004-10-30,Female,161,55,88,4,12.3,54.5,18.8,69,48.5,0,synthetic,VID49,athlete_49.mp4,0,Beginner
+50,ATH50,Priya Verma,25,12-02-2001,2001-02-12,Female,169,61,93,8,11.5,50.9,16.9,61,55.5,0,synthetic,VID50,athlete_50.mp4,0,Strong
