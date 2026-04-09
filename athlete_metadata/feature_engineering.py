@@ -1,6 +1,4 @@
 import pandas as pd
-import sqlite3
-import mysql.connector
 from sqlalchemy import create_engine
 
 
@@ -29,17 +27,11 @@ def create_feature_map(df):
 
     # ---- Feature Engineering ----
     df['BMI'] = df['weight'] / (df['height'] ** 2)
-
     df['leg_height_ratio'] = df['leg_length'] / df['height']
-
     df['exp_age_ratio'] = df['experience_years'] / df['age']
-
     df['performance_index'] = df['personal_best'] / 9.58
-
     df['training_intensity'] = df['experience_years'] * df['weekly_sessions']
-
     df['heart_rate_score'] = 1 / df['resting_heart_rate']
-
     df['injury_flag'] = df['injury_history'].astype(int)
 
     # ---- Select features ----
@@ -56,7 +48,6 @@ def create_feature_map(df):
     return df, df[feature_columns]
 
 
-# 🔥 MAIN BLOCK
 if __name__ == "__main__":
 
     # Load dataset
@@ -70,6 +61,8 @@ if __name__ == "__main__":
     # ---- Add Primary Key ----
     df.reset_index(drop=True, inplace=True)
     df['athlete_id'] = df.index + 1
+
+    feature_map = feature_map.copy()
     feature_map['athlete_id'] = df['athlete_id']
 
     # ---- Reorder columns ----
@@ -79,19 +72,17 @@ if __name__ == "__main__":
     print("\nPreview:")
     print(feature_map.head())
 
-    # ---- Save CSV ----
-    feature_map.to_csv("feature_map.csv", index=False)
-    print("\n✅ CSV saved")
+    # ---- Save only to MySQL ----
+    username = "root"
+    password = "tanmayakamma"
+    host = "localhost"
+    port = "3306"
+    database = "athlete_db"
 
-    # ---- Save to SQLite ----
-    conn_sqlite = sqlite3.connect("athlete.db")
-    feature_map.to_sql("feature_map", conn_sqlite, if_exists="replace", index=False)
-    conn_sqlite.close()
-    print("✅ Saved to SQLite")
+    engine = create_engine(
+        f"mysql+mysqlconnector://{username}:{password}@{host}:{port}/{database}"
+    )
 
-    # ---- Save to MySQL ----
-    engine = create_engine("mysql+mysqlconnector://testuser:@localhost/athlete_db")
+    feature_map.to_sql("feature_map", con=engine, if_exists="replace", index=False)
 
-    feature_map.to_sql("feature_map", engine, if_exists="replace", index=False)
-
-    print("✅ Data saved to MySQL (FINAL)")
+    print("✅ Data saved only to MySQL")

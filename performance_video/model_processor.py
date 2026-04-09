@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 import mediapipe as mp
+
+from mediapipe.python.solutions.pose import Pose
 from scipy.signal import find_peaks
 import os
 import mysql.connector   # ✅ ADDED
@@ -9,9 +11,9 @@ import mysql.connector   # ✅ ADDED
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="newpassword123",   # ⚠️ change this to your MySQL password
+    password="tanmayakamma",   # ⚠️ change this to your MySQL password
     database="gait_analysis",
-    port=33066
+    port=3306
 )
 cursor = db.cursor()
 
@@ -32,13 +34,12 @@ def calculate_angle(a, b, c):
 
 
 def process_video(video_path):
-    mp_pose = mp.solutions.pose
-    pose = mp_pose.Pose(
-        static_image_mode=False,
-        model_complexity=2,
-        min_detection_confidence=0.5,
-        min_tracking_confidence=0.5
-    )
+    pose_detector = Pose(
+    static_image_mode=False,
+    model_complexity=2,
+    min_detection_confidence=0.5,
+    min_tracking_confidence=0.5
+)
 
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
@@ -60,7 +61,7 @@ def process_video(video_path):
 
         h, w, _ = frame.shape
         rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        results = pose.process(rgb)
+        results = pose_detector.process(rgb)
 
         if results.pose_landmarks:
             landmarks = results.pose_landmarks.landmark
