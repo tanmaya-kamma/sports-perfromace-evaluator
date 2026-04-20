@@ -1,7 +1,6 @@
 # Ignore virtual environments
-.venv/
-venv/
-venv2/
+p2blvenv/
 __pycache__/
 .vscode/
-.env
+# Ignore pickle files
+*.pkl
